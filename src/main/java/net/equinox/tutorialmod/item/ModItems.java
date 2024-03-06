@@ -2,6 +2,7 @@ package net.equinox.tutorialmod.item;
 
 import net.equinox.tutorialmod.TutorialMod;
 import net.equinox.tutorialmod.item.custom.MetalDetectorItem;
+import net.equinox.tutorialmod.item.custom.ModFoodComponents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -17,6 +18,10 @@ public class ModItems {
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+    public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+    public static final Item COAL_BRIQUETTE = registerItem("coal_briquette",
+            new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
