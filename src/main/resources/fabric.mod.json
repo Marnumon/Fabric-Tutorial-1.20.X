@@ -5,7 +5,7 @@
 	"name": "Tutorial Mod",
 	"description": "This is a Tutorial Mod made by equinox XD",
 	"authors": [
-		"Equinox!"
+		"Equinox"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"net.equinox.tutorialmod.TutorialMod"
+		],
+		"client": [
+			"net.equinox.tutorialmod.TutorialModClient"
 		],
 		"fabric-datagen": [
 			"net.equinox.tutorialmod.TutorialModDataGenerator"
