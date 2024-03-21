@@ -48,26 +48,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_DOOR)
                 .add(ModBlocks.RUBY_TRAPDOOR);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.RUBY_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.RUBY_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RAW_RUBY_BLOCK)
-                .add(ModBlocks.RUBY_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.RAW_RUBY_BLOCK, ModBlocks.RUBY_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.DEEPSLATE_RUBY_ORE);
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
-                .add(ModBlocks.END_STONE_RUBY_ORE);
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
-                .add(ModBlocks.SOUND_BLOCK);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4"))).add(ModBlocks.END_STONE_RUBY_ORE);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5"))).add(ModBlocks.SOUND_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.RUBY_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.RUBY_FENCE_GATE);
-        getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.RUBY_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.RUBY_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.RUBY_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.RUBY_WALL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).add(ModBlocks.CHESTNUT_LOG, ModBlocks.CHESTNUT_WOOD, ModBlocks.STRIPPED_CHESTNUT_LOG, ModBlocks.STRIPPED_CHESTNUT_WOOD);
     }
 }

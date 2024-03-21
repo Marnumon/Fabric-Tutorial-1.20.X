@@ -1,7 +1,11 @@
 package net.equinox.tutorialmod.item;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.equinox.tutorialmod.TutorialMod;
 import net.equinox.tutorialmod.block.ModBlocks;
+import net.equinox.tutorialmod.entity.ModBoats;
+import net.equinox.tutorialmod.entity.ModEntities;
+import net.equinox.tutorialmod.item.custom.DiceItem;
 import net.equinox.tutorialmod.item.custom.MetalDetectorItem;
 import net.equinox.tutorialmod.item.custom.ModArmorItem;
 import net.equinox.tutorialmod.sound.ModSounds;
@@ -33,6 +37,12 @@ public class ModItems {
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc", new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg", new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
+    public static final Item CHESTNUT_SIGN = registerItem("chestnut_sign", new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_CHESTNUT_SIGN, ModBlocks.WALL_CHESTNUT_SIGN));
+    public static final Item HANGING_CHESTNUT_SIGN = registerItem("chestnut_hanging_sign", new HangingSignItem(ModBlocks.HANGING_CHESTNUT_SIGN, ModBlocks.WALL_HANGING_CHESTNUT_SIGN, new FabricItemSettings().maxCount(16)));
+    public static final Item CHESTNUT_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.CHESTNUT_BOAT_ID, ModBoats.CHESTNUT_BOAT_KEY, false);
+    public static final Item CHESTNUT_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.CHESTNUT_CHEST_BOAT_ID, ModBoats.CHESTNUT_BOAT_KEY, true);
+    public static final Item DICE = registerItem("dice", new DiceItem(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

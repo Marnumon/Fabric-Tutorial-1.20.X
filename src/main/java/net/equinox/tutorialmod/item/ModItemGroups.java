@@ -5,7 +5,6 @@ import net.equinox.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -23,11 +22,10 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.CORN_SEEDS);
-                        entries.add(ModBlocks.DAHLIA);
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
                         entries.add(ModItems.COAL_BRIQUETTE);
                         entries.add(ModItems.RUBY_STAFF);
-
                         entries.add(ModItems.RUBY_PICKAXE);
                         entries.add(ModItems.RUBY_AXE);
                         entries.add(ModItems.RUBY_SHOVEL);
@@ -38,8 +36,6 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_LEGGINGS);
                         entries.add(ModItems.RUBY_BOOTS);
 
-                        entries.add(Items.DIAMOND);
-
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);
@@ -47,7 +43,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModBlocks.END_STONE_RUBY_ORE);
                         entries.add(ModBlocks.SOUND_BLOCK);
-
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);
                         entries.add(ModBlocks.RUBY_FENCE);
@@ -57,6 +52,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
                         entries.add(ModBlocks.RUBY_DOOR);
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
+                        entries.add(ModBlocks.DAHLIA);
+                        entries.add(ModBlocks.GEM_POLISHING_STATION);
+                        entries.add(ModBlocks.CHESTNUT_LOG);
+                        entries.add(ModBlocks.CHESTNUT_WOOD);
+                        entries.add(ModBlocks.STRIPPED_CHESTNUT_LOG);
+                        entries.add(ModBlocks.STRIPPED_CHESTNUT_WOOD);
+                        entries.add(ModBlocks.CHESTNUT_PLANKS);
+                        entries.add(ModBlocks.CHESTNUT_LEAVES);
+                        entries.add(ModBlocks.CHESTNUT_SAPLING);
+                        entries.add(ModItems.CHESTNUT_SIGN);
+                        entries.add(ModItems.HANGING_CHESTNUT_SIGN);
+                        entries.add(ModItems.CHESTNUT_BOAT);
+                        entries.add(ModItems.CHESTNUT_CHEST_BOAT);
+                        entries.add(ModItems.DICE);
 
                     }).build());
 

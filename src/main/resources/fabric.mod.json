@@ -22,6 +22,12 @@
 		],
 		"fabric-datagen": [
 			"net.equinox.tutorialmod.TutorialModDataGenerator"
+		],
+		"rei_client": [
+			"net.equinox.tutorialmod.compat.TutorialModREIClientPlugin"
+		],
+		"terrablender": [
+			"net.equinox.tutorialmod.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [
